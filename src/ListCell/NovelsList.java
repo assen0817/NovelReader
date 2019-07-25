@@ -16,6 +16,7 @@ public class NovelsList extends ListCell<Novel> {
     private final Text nowParStory;       // 現在読んでいる話数/小説のすべての話数を表す
     private final VBox vbox;
     private Main main;
+    private String path;
     public NovelsList(Main main){
         this.main = main;
         vbox = new VBox(5);
@@ -33,7 +34,6 @@ public class NovelsList extends ListCell<Novel> {
         nowParStory.wrappingWidthProperty().bind(vbox.widthProperty().subtract(5));
     }
 
-    private String path;
     @Override
     protected void updateItem(Novel item, boolean empty) {
         super.updateItem(item, empty);

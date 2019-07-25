@@ -18,6 +18,7 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
     private final Text columnNumber;
     private final VBox vbox;
     private final HBox hbox;
+    private String pageTitle;
     public NovelColumnsList(){
         vbox = new VBox(5);
         hbox = new HBox(5);
@@ -36,7 +37,6 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
         updateDay.wrappingWidthProperty().bind(vbox.widthProperty().subtract(5));
     }
 
-    String pageTitle;
     @Override
     protected void updateItem(NovelColumn item, boolean empty) {
         super.updateItem(item, empty);

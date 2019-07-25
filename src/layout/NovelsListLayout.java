@@ -2,6 +2,7 @@ package layout;
 
 import app.Main;
 import data.Novel;
+import data.NovelColumn;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
@@ -50,5 +51,6 @@ public class NovelsListLayout {
     }
 
 
+    public ListView<Novel> getLayout(){return listView;}
 
 }

@@ -23,7 +23,6 @@ public class NovelColumnsLayout {
         listView.setCellFactory(param -> new NovelColumnsList());
         listView.setMinHeight(700- listView.getLayoutY());
 
-        main.getFlowPane().getChildren().add( listView );
     }
     public void setItem(String path){
         items.clear();
@@ -39,5 +38,7 @@ public class NovelColumnsLayout {
             }
         }
     }
+
+    public ListView<NovelColumn> getLayout(){return listView;}
 
 }
