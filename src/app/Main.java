@@ -11,17 +11,21 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 import webWindow.WebStage;
+import windowUi.NovelColumnsLayout;
 
 public class Main extends Application {
-
-    Stage stage;
+    private Stage stage;
+    private FlowPane pane;
+    NovelColumnsLayout novelColumn;
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
-        FlowPane pane = new FlowPane();
-        Scene scene = new Scene(pane, 280, 200);
+        pane = new FlowPane();
+        Scene scene = new Scene(pane, 1000, 750);
+        novelColumn = new NovelColumnsLayout(this );
+
         Button b1 = new Button("子ステージ開く");
-        //マウスがクリックされたときのイベント
+//        マウスがクリックされたときのイベント
         EventHandler<MouseEvent> mouseClick = this::mouseClick;
         b1.addEventHandler( MouseEvent.MOUSE_CLICKED , mouseClick );
         pane.getChildren().add( b1 );
@@ -32,14 +36,12 @@ public class Main extends Application {
     }
 
     private void mouseClick(MouseEvent event) {
-        try {
-            WebStage nst2 = new WebStage( stage );
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        novelColumn.setItem("n9511bs");
     }
 
     public static void main(String[] args) {
         launch(args);
     }
+    public Stage getStage() {return stage;}
+    public FlowPane getFlowPane() {return pane;}
 }
