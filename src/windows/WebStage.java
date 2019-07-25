@@ -1,4 +1,4 @@
-package webWindow;
+package windows;
 
 import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;

@@ -5,7 +5,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
-import webWindow.WebStage;
 import windowUi.NovelColumnsLayout;
 import windowUi.NovelsListLayout;
 

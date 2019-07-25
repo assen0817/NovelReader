@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/NovelReader/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/NovelReader/sample/sample.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/system/ConnectionDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/windowUi/Novel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/windowUi/NovelsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/windowUi/NovelsListLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/windowUi/StandardMenuBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bookPageWindow/BookPageWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webWindow/WebStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webWindow/WebStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/windowUi/NovelColumnsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/windowUi/NovelColumnsList.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -87,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-178">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="429">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="25" selection-end-column="65" />
+            <state relative-caret-position="362">
+              <caret line="35" selection-start-line="35" selection-end-line="37" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1282#1283#0" expanded="true" />
@@ -118,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
+            <state relative-caret-position="848">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="470">
+              <caret line="48" selection-start-line="48" selection-end-line="49" selection-end-column="74" />
               <folding>
                 <element signature="e#1662#1663#0" expanded="true" />
                 <element signature="e#1709#1710#0" expanded="true" />
@@ -140,11 +131,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsListLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="173">
+              <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bookPageWindow/BookPageWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webWindow/WebStage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,11 +197,14 @@
         <option value="$PROJECT_DIR$/src/app/NewStageTest1.java" />
         <option value="$PROJECT_DIR$/src/webWindow/NovelColumn.java" />
         <option value="$PROJECT_DIR$/src/webWindow/NovelColumnsList.java" />
-        <option value="$PROJECT_DIR$/src/windowUi/NovelColumnsList.java" />
         <option value="$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java" />
         <option value="$PROJECT_DIR$/src/app/Main.java" />
         <option value="$PROJECT_DIR$/src/windowUi/NovelsList.java" />
         <option value="$PROJECT_DIR$/src/windowUi/NovelsListLayout.java" />
+        <option value="$PROJECT_DIR$/src/bookPageWindow.java" />
+        <option value="$PROJECT_DIR$/src/bookPageWindow/bookPageWindow.java" />
+        <option value="$PROJECT_DIR$/src/bookPageWindow/BookPageWindow.java" />
+        <option value="$PROJECT_DIR$/src/windowUi/NovelColumnsList.java" />
       </list>
     </option>
   </component>
@@ -231,6 +249,12 @@
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookPageWindow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
@@ -435,12 +459,12 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1562828954285" duration="5001000" />
       <workItem from="1564028120232" duration="2684000" />
-      <workItem from="1564031771899" duration="1315000" />
+      <workItem from="1564031771899" duration="3269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13265000" />
+    <option name="totallyTimeSpent" value="15219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -497,16 +521,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app.java" />
-    <entry file="file://$PROJECT_DIR$/src/webWindow/WebStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/NewStageTest1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
@@ -545,6 +559,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="48" selection-start-line="48" selection-end-line="49" selection-end-column="74" />
+          <folding>
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -552,10 +577,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsList.java">
+    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="848">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsListLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webWindow/WebStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -564,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="25" selection-end-column="65" />
+        <state relative-caret-position="362">
+          <caret line="35" selection-start-line="35" selection-end-line="37" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1282#1283#0" expanded="true" />
@@ -576,31 +618,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsList.java">
+    <entry file="file://$PROJECT_DIR$/src/bookPageWindow/BookPageWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="213">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelsListLayout.java">
+    <entry file="file://$PROJECT_DIR$/src/windowUi/NovelColumnsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="429">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

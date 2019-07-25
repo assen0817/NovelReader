@@ -1,7 +1,10 @@
 package windowUi;
 
+        import windows.BookPageWindow;
+        import javafx.event.EventHandler;
         import javafx.scene.control.ListCell;
-        import javafx.scene.image.ImageView;
+        import javafx.scene.input.MouseButton;
+        import javafx.scene.input.MouseEvent;
         import javafx.scene.layout.HBox;
         import javafx.scene.layout.Priority;
         import javafx.scene.layout.VBox;
@@ -32,6 +35,7 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
         updateDay.wrappingWidthProperty().bind(vbox.widthProperty().subtract(5));
     }
 
+    String pageTitle;
     @Override
     protected void updateItem(NovelColumn item, boolean empty) {
         super.updateItem(item, empty);
@@ -39,10 +43,25 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
             setText(null);
             setGraphic(null);
         } else {
+            pageTitle = item.getSubTitle();
             subTitle.setText(item.getSubTitle());
             updateDay.setText(item.getPostDay()+"(" + item.getLastUpdateDay()+")");
             columnNumber.setText(Integer.toString(item.getColumnNumber()));
+            EventHandler<MouseEvent> mouseClick = this::mouseClick;
+            vbox.addEventHandler( MouseEvent.MOUSE_CLICKED , mouseClick );
             setGraphic(hbox);
+        }
+    }
+    private void mouseClick(MouseEvent event) {
+        boolean doubleClicked
+                = event.getButton().equals(MouseButton.PRIMARY)
+                && event.getClickCount() == 2;
+        if(doubleClicked) {
+            try {
+                BookPageWindow bookPageWindow = new BookPageWindow(pageTitle);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }
