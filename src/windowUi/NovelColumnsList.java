@@ -12,8 +12,6 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
     private final Text subTitle;       // タイトル
     private final Text updateDay;
     private final Text columnNumber;
-    private final String postDay;
-    private final String lastUpdateDay;
     private final VBox vbox;
     private final HBox hbox;
     public NovelColumnsList(){
@@ -23,8 +21,6 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
         subTitle.setFont(new Font("System Bold", 18));
         updateDay = new Text();
         columnNumber = new Text();
-        postDay = "";
-        lastUpdateDay = "";
         VBox.setVgrow(subTitle, Priority.NEVER);
         VBox.setVgrow(updateDay, Priority.ALWAYS);
         HBox.setHgrow(vbox, Priority.NEVER);

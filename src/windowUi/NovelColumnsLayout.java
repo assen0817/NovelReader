@@ -26,18 +26,6 @@ public class NovelColumnsLayout {
         listView = new ListView<NovelColumn>();
         listView.setItems(items);
         listView.setCellFactory(param -> new NovelColumnsList());
-
-
-
-//        Button b1 = new Button("子ステージ開く");
-//        //マウスがクリックされたときのイベント
-//        EventHandler<MouseEvent> mouseClick = this::mouseClick;
-//        b1.addEventHandler( MouseEvent.MOUSE_CLICKED , mouseClick );
-//
-//        VBox.setVgrow(b1, Priority.NEVER);
-//        VBox.setVgrow(listView, Priority.ALWAYS);
-//        vbox.getChildren().addAll(b1, listView);
-
         listView.setMinHeight(700- listView.getLayoutY());
 
         main.getFlowPane().getChildren().add( listView );
@@ -57,12 +45,4 @@ public class NovelColumnsLayout {
         }
     }
 
-
-//    private void mouseClick(MouseEvent event) {
-//        try {
-//            WebStage nst2 = new WebStage( stage );
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
 }
