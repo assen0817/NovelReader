@@ -1,11 +1,10 @@
-package windowUi;
+package ListCell;
 
 import app.Main;
+import data.Novel;
 import javafx.event.EventHandler;
 import javafx.scene.control.ListCell;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;

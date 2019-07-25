@@ -1,10 +1,12 @@
-package windowUi;
+package layout;
 
         import app.Main;
+        import data.NovelColumn;
         import javafx.collections.FXCollections;
         import javafx.collections.ObservableList;
         import javafx.scene.control.ListView;
         import javafx.scene.layout.VBox;
+        import ListCell.NovelColumnsList;
 
         import java.io.File;
 

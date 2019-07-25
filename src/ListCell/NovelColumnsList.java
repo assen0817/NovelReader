@@ -1,5 +1,6 @@
-package windowUi;
+package ListCell;
 
+        import data.NovelColumn;
         import windows.BookPageWindow;
         import javafx.event.EventHandler;
         import javafx.scene.control.ListCell;

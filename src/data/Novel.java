@@ -1,4 +1,4 @@
-package windowUi;
+package data;
 
 public class Novel {
     private String title;       // タイトル
