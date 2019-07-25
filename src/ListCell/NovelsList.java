@@ -9,16 +9,16 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import layout.NovelColumnsLayout;
+
+import java.util.ArrayList;
 
 public class NovelsList extends ListCell<Novel> {
     private final Text title;       // タイトル
     private final Text author;      //作者名
     private final Text nowParStory;       // 現在読んでいる話数/小説のすべての話数を表す
     private final VBox vbox;
-    private Main main;
-    private String path;
-    public NovelsList(Main main){
-        this.main = main;
+    public NovelsList(){
         vbox = new VBox(5);
         title = new Text();
         title.setFont(new Font("System Bold", 18));
@@ -41,16 +41,10 @@ public class NovelsList extends ListCell<Novel> {
             setText(null);
             setGraphic(null);
         } else {
-            path = item.getTitle();
             title.setText(item.getTitle());
             author.setText(item.getAuthor());
             nowParStory.setText(item.getNowReading() + "/" + item.getAllStory());
-            EventHandler<MouseEvent> mouseClick = this::mouseClick;
-            vbox.addEventHandler( MouseEvent.MOUSE_CLICKED , mouseClick );
             setGraphic(vbox);
         }
-    }
-    private void mouseClick(MouseEvent event) {
-        main.getNovelColumn().setItem(path);
     }
 }

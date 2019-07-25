@@ -18,7 +18,6 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
     private final Text columnNumber;
     private final VBox vbox;
     private final HBox hbox;
-    private String pageTitle;
     public NovelColumnsList(){
         vbox = new VBox(5);
         hbox = new HBox(5);
@@ -44,25 +43,10 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
             setText(null);
             setGraphic(null);
         } else {
-            pageTitle = item.getSubTitle();
             subTitle.setText(item.getSubTitle());
             updateDay.setText(item.getPostDay()+"(" + item.getLastUpdateDay()+")");
             columnNumber.setText(Integer.toString(item.getColumnNumber()));
-            EventHandler<MouseEvent> mouseClick = this::mouseClick;
-            vbox.addEventHandler( MouseEvent.MOUSE_CLICKED , mouseClick );
             setGraphic(hbox);
-        }
-    }
-    private void mouseClick(MouseEvent event) {
-        boolean doubleClicked
-                = event.getButton().equals(MouseButton.PRIMARY)
-                && event.getClickCount() == 2;
-        if(doubleClicked) {
-            try {
-                BookPageWindow bookPageWindow = new BookPageWindow(pageTitle);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
     }
 }

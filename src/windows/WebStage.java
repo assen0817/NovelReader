@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class WebStage extends Stage {
     WebView webView;
-    public WebStage(Stage primaryStage) throws Exception{
+    public WebStage() throws Exception{
         webView = new WebView();
         WebEngine engine = webView.getEngine();
         Scene scene = new Scene(webView,1200,800);
