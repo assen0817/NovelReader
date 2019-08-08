@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 public class BookPageWindow extends Stage {
     private Stage page;
     private FlowPane pane;
+
+    //読書画面用のWindowを生成
     public BookPageWindow(String pageTitle) throws Exception{
         page = new Stage();
         pane = new FlowPane();

@@ -21,6 +21,8 @@ public class NovelsListLayout {
     private final ObservableList<Novel> items = FXCollections.observableArrayList();
     private VBox vbox;
     NovelColumnsLayout novelColumn;
+
+    //小説のリストのレイアウト定義
     public NovelsListLayout(NovelColumnsLayout novelColumn){
         this.novelColumn = novelColumn;
         vbox = new VBox(5);
@@ -52,6 +54,7 @@ public class NovelsListLayout {
 
     public ListView<Novel> getLayout(){return listView;}
 
+    //リストの更新
     public void update(){
 
     }

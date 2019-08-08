@@ -13,9 +13,12 @@ import java.net.URL;
 public class Novels {
     private static NovelsListLayout novelsListLayouts;
 
+//更新する小説リストを登録する
     public static void setNovelList(NovelsListLayout novelsListLayouts){
         Novels.novelsListLayouts = novelsListLayouts;
     }
+
+    //urlから小説を追加
     public static void add(String url){
         Alert alrt = new Alert(Alert.AlertType.INFORMATION);
         if (!checkURL(url)) {
@@ -30,13 +33,13 @@ public class Novels {
         if(ncode == null) {
             alrt.setTitle("Error");
             alrt.setHeaderText(null);
+            alrt.setTitle("Error");
             alrt.setContentText("このページからはダウンロードできません。");
             alrt.showAndWait();
             return;
         }
 
         if(checkNovel(ncode)) {
-            alrt.setTitle("Error");
             alrt.setHeaderText(null);
             alrt.setContentText("この小説は既に登録されています。");
             alrt.showAndWait();
@@ -54,6 +57,7 @@ public class Novels {
         return url != null || !url.trim().isEmpty();
     }
 
+    //URLからNcodeを取得
     public static String getNcode(String url){
         String[] urls = url.split("/");
         boolean nextNovel = false;
@@ -70,11 +74,12 @@ public class Novels {
         }
         return null;
     }
-
+//  追加したい小説がもう追加されているかどうかをチェック
     public static Boolean checkNovel(String ncode){
         return false;
     }
 
+    // 追加したい小説（ncodeで判別）の情報をAPIで取得する
     private static void getNovel(String ncode) {
         try{
 //             URLを作成してGET通信を行う

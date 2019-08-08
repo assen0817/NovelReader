@@ -18,6 +18,7 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
     private final Text columnNumber;
     private final VBox vbox;
     private final HBox hbox;
+    //一つ一つの項目の雛形
     public NovelColumnsList(){
         vbox = new VBox(5);
         hbox = new HBox(5);
@@ -36,6 +37,7 @@ public class NovelColumnsList extends ListCell<NovelColumn> {
         updateDay.wrappingWidthProperty().bind(vbox.widthProperty().subtract(5));
     }
 
+    //スクロールなどの更新処理
     @Override
     protected void updateItem(NovelColumn item, boolean empty) {
         super.updateItem(item, empty);

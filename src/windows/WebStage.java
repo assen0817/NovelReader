@@ -20,6 +20,7 @@ public class WebStage extends Stage {
     private BorderPane pane;
     private WebEngine engine;
     private TextField urlBox;
+    //Webサイト画面用のWindowを生成
     public WebStage() throws Exception{
         String indexURL = "https://yomou.syosetu.com";
         webView = new WebView();
@@ -35,7 +36,7 @@ public class WebStage extends Stage {
         setScene(scene);
         show();
 
-        // テキスト入力
+        // アドレスバー
         urlBox = new TextField();
         urlBox.setText(indexURL);
         urlBox.setFont(new Font("sanserif", 12));
@@ -59,7 +60,7 @@ public class WebStage extends Stage {
             }
         });
 
-//        ページの小説をダウンロード
+//        ページの小説をダウンロードボタン
         Button downloadButton = new Button("追加");
         downloadButton.setFont(new Font("sanserif", 12));
         downloadButton.setOnAction(new EventHandler<ActionEvent>() {

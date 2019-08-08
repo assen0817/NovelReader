@@ -33,6 +33,7 @@ public class MainWindow {
         setMenu(pane);
     }
 
+    //メニューバーの設定
     private void setMenu(BorderPane pane){
         MenuBar menu = new MenuBar();
         Menu menu1 = new Menu("小説追加");

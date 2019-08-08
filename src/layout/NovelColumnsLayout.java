@@ -35,6 +35,7 @@ public class NovelColumnsLayout {
         listView.setOnMouseClicked(mouseClick);
     }
 
+
     public void setItem(String path){
         items.clear();
         File file = new File("src/novels/"+path);
@@ -51,7 +52,7 @@ public class NovelColumnsLayout {
     }
 
     public ListView<NovelColumn> getLayout(){return listView;}
-
+//ダブルクリック時に読書画面を起動する
     private void mouseClick(MouseEvent event) {
         NovelColumn column = listView.getSelectionModel().getSelectedItem();
         boolean doubleClicked
