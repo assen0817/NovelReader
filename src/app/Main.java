@@ -11,7 +11,7 @@ import windows.MainWindow;
 public class Main extends Application {
     private Stage stage;
     private BorderPane pane;
-    //メインWindowの生成
+    //トップWindowの生成
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;

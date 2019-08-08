@@ -1,5 +1,6 @@
 package data;
 
+//NovelListの項目定義
 public class Novel {
     private String title;       // タイトル
     private String author;      //作者名

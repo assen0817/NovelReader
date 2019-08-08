@@ -1,5 +1,7 @@
 package data;
 
+//NovelColumnsListの項目定義
+
 public class NovelColumn {
     private String subTitle;
     private String postDay;

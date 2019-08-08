@@ -22,6 +22,7 @@ public class NovelColumnsLayout {
     private VBox vbox;
     private static ArrayList<NovelColumnsLayout> objects = new ArrayList<NovelColumnsLayout>();
 
+    //小説の章のリストのレイアウト定義
     public NovelColumnsLayout(){
         vbox = new VBox(5);
 
@@ -35,7 +36,7 @@ public class NovelColumnsLayout {
         listView.setOnMouseClicked(mouseClick);
     }
 
-
+//   章リストに表示したい小説（ncode）をセット
     public void setItem(String path){
         items.clear();
         File file = new File("src/novels/"+path);
