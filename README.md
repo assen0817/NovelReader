@@ -1,5 +1,10 @@
 # NovelReader
 小説を登録整理できるアプリ（開発中）
+# 主な機能(予定)
+・小説をダウンロード
+・管理
+・読む用ページのカスタム
+・アプリ(Android)と共有
 # License
 Copyright [2019] [assen]
 
