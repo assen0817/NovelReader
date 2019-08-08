@@ -45,10 +45,16 @@ public class NovelsListLayout {
     }
     private void mouseClick(MouseEvent event) {
         Novel novel = listView.getSelectionModel().getSelectedItem();
-        novelColumn.setItem(novel.getTitle());
+        if(novel != null) {
+            novelColumn.setItem(novel.getTitle());
+        }
     }
 
     public ListView<Novel> getLayout(){return listView;}
+
+    public void update(){
+
+    }
 
 
 }

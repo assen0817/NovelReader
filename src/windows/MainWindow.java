@@ -11,6 +11,7 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import layout.NovelColumnsLayout;
 import layout.NovelsListLayout;
+import system.Novels;
 
 public class MainWindow {
 
@@ -22,6 +23,7 @@ public class MainWindow {
         NovelColumnsLayout novelColumn = new NovelColumnsLayout();
 //        小説
         NovelsListLayout novel = new NovelsListLayout(novelColumn);
+        Novels.setNovelList(novel);
 
         HBox.setHgrow(novel.getLayout(), Priority.ALWAYS);
         HBox.setHgrow(novelColumn.getLayout(), Priority.ALWAYS);
