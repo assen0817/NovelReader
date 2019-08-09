@@ -83,15 +83,13 @@ public class Novels {
     private static void getNovel(String ncode) {
         try{
 //             URLを作成してGET通信を行う
-            URL url = new URL("https://api.syosetu.com/novelapi/api/?of=t&ncode=" + ncode);
+            URL url = new URL("https://api.syosetu.com/novelapi/api/?ncode=" + ncode);
             HttpURLConnection http = (HttpURLConnection)url.openConnection();
             http.setRequestMethod("GET");
             http.connect();
 //             サーバーからのレスポンスを標準出力へ出す
             BufferedReader reader = new BufferedReader(new InputStreamReader(http.getInputStream()));
-            String line = "";
-            while((line = reader.readLine()) != null)
-                System.out.println(line);
+            Files.NovelWriter(ncode, reader);
             reader.close();
 //            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
             Thread.sleep(5000);

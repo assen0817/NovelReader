@@ -4,6 +4,7 @@ package data;
 public class Novel {
     private String title;       // タイトル
     private String author;      //作者名
+    private String ncode;       // 小説のコード
     private int nowReading;     // 現在読んでいる話数
     private int allStory;       // 小説のすべての話数
 
@@ -39,10 +40,21 @@ public class Novel {
         this.allStory = allStory;
     }
 
-    public Novel( String title ,String author ,int nowReading, int allStory ){
+    public String getNcode() {
+        return ncode;
+    }
+
+    public void setNcode(String ncode) {
+        this.ncode = ncode;
+    }
+
+    public Novel(String title, String author, String ncode, int nowReading, int allStory){
         this.title = title;
         this.author = author;
+        this.ncode = ncode;
         this.nowReading = nowReading;
         this.allStory = allStory;
     }
+
+
 }

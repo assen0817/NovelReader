@@ -1,20 +1,17 @@
 package layout;
 
-import app.Main;
 import data.Novel;
-import data.NovelColumn;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.scene.control.ListView;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import ListCell.NovelsList;
-import windows.BookPageWindow;
-import windows.WebStage;
+import system.Files;
 
 import java.io.File;
+import java.util.HashMap;
 
 public class NovelsListLayout {
     private ListView<Novel> listView;
@@ -38,7 +35,10 @@ public class NovelsListLayout {
         //取得した一覧を表示する
         for (File value : files) {
             String[] ncode = value.toString().split("\\\\");
-            items.add(new Novel(ncode[ncode.length -1], "aaaa", 1, 10));
+            HashMap<String, String> map = Files.NovelReader(ncode[ncode.length -1]);
+            if(map.size() == 0)items.add(new Novel(ncode[ncode.length -1], "aaaa", ncode[ncode.length -1], 1, 10));
+            else items.add(new Novel(map.get("title"), map.get("writer"), ncode[ncode.length -1], 1, Integer.parseInt(map.get("general_all_no").trim())));
+
         }
         listView.setMinHeight(700- listView.getLayoutY());
 
@@ -48,7 +48,7 @@ public class NovelsListLayout {
     private void mouseClick(MouseEvent event) {
         Novel novel = listView.getSelectionModel().getSelectedItem();
         if(novel != null) {
-            novelColumn.setItem(novel.getTitle());
+            novelColumn.setItem(novel.getNcode());
         }
     }
 

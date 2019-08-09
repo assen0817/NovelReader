@@ -2,8 +2,6 @@ package windows;
 
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 public class BookPageWindow extends Stage {

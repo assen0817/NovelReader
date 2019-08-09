@@ -1,23 +1,19 @@
 package windows;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.stage.Stage;
 import layout.NovelColumnsLayout;
 import layout.NovelsListLayout;
 import system.Novels;
 
-public class MainWindow {
+public class NovelManagementWindow {
 
     private HBox hbox;
 
-    public MainWindow(BorderPane pane){
+    public NovelManagementWindow(BorderPane pane){
         hbox = new HBox(5);
 //        小説の章
         NovelColumnsLayout novelColumn = new NovelColumnsLayout();
@@ -43,9 +39,11 @@ public class MainWindow {
         menu1.getItems().add(menuItem11);
         menu1.getItems().add(menuItem12);
 
-        Menu menu2 = new Menu("設定");
+        Menu menu2 = new Menu("更新");
+        Menu menu3 = new Menu("設定");
         menu.getMenus().add(menu1);
         menu.getMenus().add(menu2);
+        menu.getMenus().add(menu3);
         pane.setTop(menu);
     }
 

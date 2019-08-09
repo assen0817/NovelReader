@@ -4,9 +4,8 @@ package app;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
-import windows.MainWindow;
+import windows.NovelManagementWindow;
 
 public class Main extends Application {
     private Stage stage;
@@ -18,7 +17,7 @@ public class Main extends Application {
         pane = new BorderPane();
         Scene scene = new Scene(pane, 1000, 750);
 
-        MainWindow mainWindow = new MainWindow(pane);
+        NovelManagementWindow novelManagementWindow = new NovelManagementWindow(pane);
 
         stage.setTitle("Hello World");
         stage.setScene(scene);
