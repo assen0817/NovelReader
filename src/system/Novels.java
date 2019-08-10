@@ -2,6 +2,7 @@ package system;
 
 import javafx.scene.control.Alert;
 import layout.NovelsListLayout;
+import windows.MessageWindow;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +12,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Novels {
+    private static String novelNcodeSite = "ncode.syosetu.com";
+    private static String novelAPI = "https://api.syosetu.com/novelapi/api/";
     private static NovelsListLayout novelsListLayouts;
 
 //更新する小説リストを登録する
@@ -20,37 +23,26 @@ public class Novels {
 
     //urlから小説を追加
     public static void add(String url){
-        Alert alrt = new Alert(Alert.AlertType.INFORMATION);
+        MessageWindow mes = new MessageWindow();
         if (!checkURL(url)) {
-            alrt.setTitle("Error");
-            alrt.setHeaderText(null);
-            alrt.setContentText("このページからはダウンロードできません。");
-            alrt.showAndWait();
+            mes.Error("このページからはダウンロードできません。");
             return;
         }
         String ncode = getNcode(url);
 
         if(ncode == null) {
-            alrt.setTitle("Error");
-            alrt.setHeaderText(null);
-            alrt.setTitle("Error");
-            alrt.setContentText("このページからはダウンロードできません。");
-            alrt.showAndWait();
+            mes.Error("このページからはダウンロードできません。");
             return;
         }
 
         if(checkNovel(ncode)) {
-            alrt.setHeaderText(null);
-            alrt.setContentText("この小説は既に登録されています。");
-            alrt.showAndWait();
+            mes.Error("この小説は既に登録されています。");
             return;
         }
 
         getNovel(ncode);
-        alrt.setTitle("完了");
-        alrt.setHeaderText(null);
-        alrt.setContentText("小説が正常に追加されました。");
-        alrt.showAndWait();
+        mes.finishNotice("小説が正常に追加されました。");
+
     }
 
     public static Boolean checkURL(String url){
@@ -68,7 +60,7 @@ public class Novels {
                 }
                 nextNovel = false;
             }
-            if(u.equals("ncode.syosetu.com")){
+            if(u.equals(novelNcodeSite)){
                 nextNovel = true;
             }
         }
@@ -83,7 +75,7 @@ public class Novels {
     private static void getNovel(String ncode) {
         try{
 //             URLを作成してGET通信を行う
-            URL url = new URL("https://api.syosetu.com/novelapi/api/?ncode=" + ncode);
+            URL url = new URL( novelAPI + "?ncode=" + ncode);
             HttpURLConnection http = (HttpURLConnection)url.openConnection();
             http.setRequestMethod("GET");
             http.connect();

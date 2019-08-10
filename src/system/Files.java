@@ -23,16 +23,12 @@ public class Files {
 //    ファイルに保存された小説情報を返す
     public static HashMap<String, String> NovelReader(String ncode) {
         HashMap<String, String> map = new HashMap<String, String>();//[1]
-        String dir =  novels + ncode;
-        File folder = new File(dir);
-        if(!folder.exists()) return map;
-        String fileDir = dir + datafile;
-
-        File file = new File(fileDir);
-        if(!file.exists()) return map;
+        String file =  novels + ncode + datafile;
+        if(!Files.CheckNovelDirectory(ncode)) return map;
+        if(!Files.CheckNovelFileData(ncode)) return map;
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
+            BufferedReader br = new BufferedReader(new FileReader(new File(file)));
 
             String line;
             String key = "";
@@ -62,6 +58,16 @@ public class Files {
             e.printStackTrace();
         }
         return map;
+    }
+//    小説のディレクトリの有無
+    public static Boolean CheckNovelDirectory(String ncode){
+        String file = novels + ncode;
+        return (new File(file)).exists();
+    }
+//    小説の情報ファイルの有無
+    public static Boolean CheckNovelFileData(String ncode){
+        String file = novels + ncode + datafile;
+        return (new File(file)).exists();
     }
 //    小説の章のデータを書き込む
     public static void NovelColumnsWriter(PrintWriter pw, BufferedReader data){
