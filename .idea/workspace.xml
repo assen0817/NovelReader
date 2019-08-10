@@ -7,14 +7,130 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/windows/MessageWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/Novels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/Novels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NovelReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NovelReader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n1619dr/.NovelData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n7105co/.NovelData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/#あらすじ_n9511bs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00004.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00006.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00007.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00008.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00009.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00011.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00012.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00013.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00015.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00016.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00017.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00020.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00022.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00023.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00024.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00025.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00026.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00027.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00028.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00029.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00030.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00031.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00032.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00033.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00034.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00035.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00037.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00038.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00039.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00040.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00041.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00042.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00043.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00044.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/novels/n9511bs/N9511BS-00045.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NovelReader/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListCell/NovelColumnsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListCell/NovelsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Novel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/NovelColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/NovelColumnsLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/NovelsListLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n1619dr/.NovelData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n7105co/.NovelData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/#あらすじ_n9511bs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00004.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00006.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00007.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00008.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00009.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00011.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00012.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00013.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00015.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00016.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00017.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00020.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00022.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00023.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00024.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00025.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00026.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00027.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00028.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00029.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00030.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00031.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00032.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00033.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00034.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00035.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00037.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00038.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00039.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00040.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00041.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00042.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00043.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00044.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/novels/n9511bs/N9511BS-00045.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/ConnectionDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/Files.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/Novels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/windows/BookPageWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/windows/MessageWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/windows/NovelManagementWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/windows/WebStage.java" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,40 +200,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/system/Novels.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelsListLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="-203">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-                <element signature="e#1276#1277#0" expanded="true" />
-                <element signature="e#1826#1827#0" expanded="true" />
-                <element signature="e#1854#1855#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/windows/MessageWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/system/Files.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="153">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
-                <element signature="e#125#126#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/system/Files.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="131">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,6 +306,11 @@
         <option value="$PROJECT_DIR$/src/windows/DialogWindow.java" />
         <option value="$PROJECT_DIR$/src/windows/MessageWindow.java" />
         <option value="$PROJECT_DIR$/src/system/Novels.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/system/Novels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/layout/NovelsListLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/system/Files.java" />
+        <option value="$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java" />
       </list>
     </option>
   </component>
@@ -243,50 +359,64 @@
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ListCell" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="novels" type="462c0819:PsiDirectoryNode" />
-              <item name="n1619dr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
               <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -315,12 +445,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\assen\Creative Cloud Files\source\repos\NovelReader" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -489,18 +624,18 @@
       <workItem from="1565255602906" duration="2649000" />
       <workItem from="1565265057575" duration="10373000" />
       <workItem from="1565352074751" duration="4747000" />
-      <workItem from="1565441661895" duration="2570000" />
+      <workItem from="1565441661895" duration="6298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88722000" />
+    <option name="totallyTimeSpent" value="92450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.3379531" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1641791" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -510,7 +645,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.276273" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2751896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -589,7 +724,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/NewStageTest1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/NewStageTest1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
@@ -599,17 +734,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="33" selection-start-column="33" selection-end-column="33" />
@@ -617,7 +752,7 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
@@ -636,24 +771,14 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/novels/n1619dr/.NovelData.txt" />
-    <entry file="file://$PROJECT_DIR$/src/windows/NovelManagementWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="937">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/novels/n1619dr/.NovelData">
+    <entry file="file://$PROJECT_DIR$/novels/n1619dr/.NovelData">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="7" column="37" lean-forward="true" selection-end-line="31" />
@@ -663,45 +788,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windows/BookPageWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/windows/BookPageWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/NovelColumn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/NovelColumn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="27" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/NovelsListLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="12" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/NovelColumnsLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="46" column="14" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/ConnectionDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListCell/NovelColumnsList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="47" column="34" selection-end-line="53" selection-end-column="1" />
@@ -711,7 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListCell/NovelsList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelsList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="25" column="27" selection-end-line="53" />
@@ -721,14 +822,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/Novel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Novel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windows/WebStage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/windows/WebStage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
@@ -738,17 +839,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/Files.java">
+    <entry file="file://$PROJECT_DIR$/NovelReader.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="355">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/Novels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/windows/MessageWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/2579a96d9e05619798b3cf971757ab72._gstmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/windows/MessageWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="28" />
@@ -759,16 +887,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/system/Novels.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/windows/NovelManagementWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="459">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/ConnectionDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelsListLayout (Conflicted copy from DESKTOP-OGB5EFN on 2019-08-11).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/system/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelsListLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,7 +952,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -825,6 +992,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>NovelReader</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
