@@ -1,15 +1,13 @@
 package system;
 
-import javafx.scene.control.Alert;
 import layout.NovelsListLayout;
 import windows.MessageWindow;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 public class Novels {
     private static String novelNcodeSite = "ncode.syosetu.com";
@@ -35,12 +33,13 @@ public class Novels {
             return;
         }
 
-        if(checkNovel(ncode)) {
+        if(checkWhetherNovel(ncode)) {
             mes.Error("この小説は既に登録されています。");
             return;
         }
 
-        getNovel(ncode);
+        makeNovelInfo(ncode);
+        novelsListLayouts.update();
         mes.finishNotice("小説が正常に追加されました。");
 
     }
@@ -66,13 +65,17 @@ public class Novels {
         }
         return null;
     }
+
 //  追加したい小説がもう追加されているかどうかをチェック
-    public static Boolean checkNovel(String ncode){
+    public static Boolean checkWhetherNovel(String ncode){
+        List<String> localNcode = Files.getLocalNcode();
+        if (localNcode == null) return false;
+        for(String str: localNcode) if(str.equals(ncode))return true;
         return false;
     }
 
     // 追加したい小説（ncodeで判別）の情報をAPIで取得する
-    private static void getNovel(String ncode) {
+    public static void makeNovelInfo(String ncode) {
         try{
 //             URLを作成してGET通信を行う
             URL url = new URL( novelAPI + "?ncode=" + ncode);
@@ -84,11 +87,9 @@ public class Novels {
             Files.NovelWriter(ncode, reader);
             reader.close();
 //            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
-            Thread.sleep(5000);
-            novelsListLayouts.update();
+            Thread.sleep(1000);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
-
 }

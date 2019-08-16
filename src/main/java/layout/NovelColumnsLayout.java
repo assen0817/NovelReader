@@ -37,9 +37,9 @@ public class NovelColumnsLayout {
     }
 
 //   章リストに表示したい小説（ncode）をセット
-    public void setItem(String path){
+    public void update(String ncode){
         items.clear();
-        File file = new File("novels/"+path);
+        File file = new File("novels/"+ncode);
         File[] files = file.listFiles();
 
         if(files != null) {

@@ -1,8 +1,12 @@
 package system;
 
+import data.Novel;
+
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 //ファイルの操作全般
 public class Files {
@@ -30,7 +34,7 @@ public class Files {
         try {
             BufferedReader br = new BufferedReader(new FileReader(new File(file)));
 
-            String line;
+            String line ;
             String key = "";
             StringBuilder value = new StringBuilder();
             while ((line = br.readLine()) != null) {
@@ -76,5 +80,19 @@ public class Files {
 //    小説の章（本文）をファイルから読み取る
     public static void NovelColumnReader(String ncode, int index){
 
+    }
+
+    public static List<String> getLocalNcode(){
+        File file = new File("novels");
+        List<String> ncode = new ArrayList<>();
+        File[] files = file.listFiles();
+
+        if(files == null) return null;
+
+        for (File value : files) {
+            String[] path = value.toString().split("\\\\");
+            ncode.add(path[path.length -1]);
+        }
+        return ncode;
     }
 }
