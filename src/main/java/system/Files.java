@@ -13,16 +13,20 @@ public class Files {
     public static final String novels = "novels/";
     public static final String datafile = "/.NovelData";
 //    小説の情報をファイルに書き込む
-    public static void NovelWriter(String ncode, BufferedReader data) throws IOException {
-        String dir =  novels + ncode;
-        File folder = new File(dir);
-        if(!folder.exists()) folder.mkdir();
-        String file = dir + datafile;
-        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
-        String line="";
-        while((line = data.readLine()) != null)
-            pw.println(line);
-        pw.close();
+    public static void NovelWriter(String ncode, BufferedReader data) {
+        try {
+            String dir = novels + ncode;
+            File folder = new File(dir);
+            if (!folder.exists()) folder.mkdir();
+            String file = dir + datafile;
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+            String line = "";
+            while ((line = data.readLine()) != null)
+                pw.println(line);
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 //    ファイルに保存された小説情報を返す
     public static HashMap<String, String> NovelReader(String ncode) {
@@ -47,8 +51,9 @@ public class Files {
                     String[] str = line.split(":");
                     int cnt = 0;
                     key = str[0].trim();
-                    if(str.length >= 2)
-                        value.append(str[1].trim());
+                    if(str.length >= 2) {
+                        value.append(str[1].trim().replaceAll("|", "").replaceAll(">", ""));
+                    }
                     continue;
                 }
                 if (!key.equals("")) {

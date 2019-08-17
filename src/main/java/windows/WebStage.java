@@ -15,6 +15,8 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import system.Novels;
 
+import java.io.IOException;
+
 public class WebStage extends Stage {
     WebView webView;
     private BorderPane pane;
@@ -65,7 +67,7 @@ public class WebStage extends Stage {
         downloadButton.setFont(new Font("sanserif", 12));
         downloadButton.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
-                Novels.add(engine.getLocation());
+                    Novels.add(engine.getLocation());
             }
         });
 

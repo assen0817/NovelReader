@@ -38,8 +38,13 @@ public class Novels {
             return;
         }
 
-        makeNovelInfo(ncode);
-        novelsListLayouts.update();
+        BufferedReader reader = NovelALLInfo(ncode);
+        if(reader == null) {
+            mes.Error("小説を追加できませんでした。");
+            return;
+        }
+        Files.NovelWriter(ncode, reader);
+        if(novelsListLayouts != null) novelsListLayouts.update();
         mes.finishNotice("小説が正常に追加されました。");
 
     }
@@ -74,22 +79,28 @@ public class Novels {
         return false;
     }
 
+    public static BufferedReader NovelALLInfo(String ncode){
+        return NovelAPI(ncode, "");
+    }
+
     // 追加したい小説（ncodeで判別）の情報をAPIで取得する
-    public static void makeNovelInfo(String ncode) {
+    private static BufferedReader NovelAPI(String ncode, String parame) {
         try{
 //             URLを作成してGET通信を行う
-            URL url = new URL( novelAPI + "?ncode=" + ncode);
+            URL url = new URL( novelAPI + "?ncode=" + ncode + parame);
             HttpURLConnection http = (HttpURLConnection)url.openConnection();
             http.setRequestMethod("GET");
             http.connect();
 //             サーバーからのレスポンスを標準出力へ出す
             BufferedReader reader = new BufferedReader(new InputStreamReader(http.getInputStream()));
-            Files.NovelWriter(ncode, reader);
+//            Files.NovelWriter(ncode, reader);
             reader.close();
 //            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
             Thread.sleep(1000);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+        return null;
     }
+
 }
