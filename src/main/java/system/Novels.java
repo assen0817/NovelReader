@@ -1,7 +1,12 @@
 package system;
 
 import layout.NovelsListLayout;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import windows.MessageWindow;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -101,6 +106,30 @@ public class Novels {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void NovelColums(String ncode){
+        try {
+            Document document = Jsoup.connect("https://" + novelNcodeSite + "/" + ncode).get();
+            Elements elements = document.select(".chapter_title, .subtitle, .long_update, span[title]");
+
+            for (Element element : elements) {
+                Elements a = element.select("a");
+                Elements div = element.select("div");
+                Elements dt = element.select("dt");
+                Elements span = element.select("span");
+
+                System.out.print(div.text());
+                System.out.print(a.text());
+                System.out.print(dt.text());
+                System.out.print(span.attr("title"));
+                System.out.println();
+//                if(!div.text().equals("")){
+//                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

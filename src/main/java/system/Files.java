@@ -43,8 +43,6 @@ public class Files {
             StringBuilder value = new StringBuilder();
             while ((line = br.readLine()) != null) {
                 if (line.contains(":")) {
-                    System.out.println(key);
-                    System.out.println(value);
                     map.put(key, value.toString());
                     key = "";
                     value = new StringBuilder();
