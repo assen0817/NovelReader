@@ -1,6 +1,5 @@
 package layout;
 
-        import app.Main;
         import data.NovelColumn;
         import javafx.collections.FXCollections;
         import javafx.collections.ObservableList;
@@ -10,8 +9,8 @@ package layout;
         import javafx.scene.input.MouseEvent;
         import javafx.scene.layout.VBox;
         import ListCell.NovelColumnsList;
+        import system.Files;
         import windows.BookPageWindow;
-        import windows.WebStage;
 
         import java.io.File;
         import java.util.ArrayList;
@@ -39,16 +38,20 @@ public class NovelColumnsLayout {
 //   章リストに表示したい小説（ncode）をセット
     public void update(String ncode){
         items.clear();
-        File file = new File("novels/"+ncode);
-        File[] files = file.listFiles();
-
-        if(files != null) {
-            int i = 0;
-            //取得した一覧を表示する
-            for (File value : files) {
-                String[] column = value.toString().split("\\\\");
-                items.add(new NovelColumn(column[column.length - 1], "", "", i++));
+        ArrayList<String> columns = Files.NovelColumnsReader(ncode);
+        int sumColumn = 0;
+        for(int i = 1; i < columns.size(); i++){
+            NovelColumn novelColumn = new NovelColumn();
+            String[] column = columns.get(i).split(",");
+            novelColumn.setTitle(column[0]);
+            if(column.length > 1) {
+                sumColumn++;
+                novelColumn.setColumnNumber(sumColumn);
+                novelColumn.setPostDay(column[1]);
+                if(column.length > 2) novelColumn.setLastUpdateDay(column[2]);
             }
+            items.add(novelColumn);
+
         }
     }
 
@@ -56,12 +59,13 @@ public class NovelColumnsLayout {
 //ダブルクリック時に読書画面を起動する
     private void mouseClick(MouseEvent event) {
         NovelColumn column = listView.getSelectionModel().getSelectedItem();
+        if(column.getColumnNumber() == 0) return;
         boolean doubleClicked
                 = event.getButton().equals(MouseButton.PRIMARY)
                 && event.getClickCount() == 2;
         if(doubleClicked) {
             try {
-                BookPageWindow bookPageWindow = new BookPageWindow(column.getSubTitle());
+                BookPageWindow bookPageWindow = new BookPageWindow(column.getTitle());
             } catch (Exception e) {
                 e.printStackTrace();
             }

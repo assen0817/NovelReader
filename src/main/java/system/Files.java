@@ -103,7 +103,7 @@ public class Files {
                 if(!a.text().isEmpty()){
                     pw.println(line);
                     line = new StringBuilder();
-                    line.append("subtitle:").append(a.text());
+                    line.append(a.text());
                 }
                 if(!dt.text().isEmpty()){
                     line.append(",").append(dt.text());
@@ -113,7 +113,7 @@ public class Files {
                 if(!div.text().isEmpty()){
                     pw.println(line);
                     line = new StringBuilder();
-                    line.append("chapter_title:").append(div.text());
+                    line.append(div.text());
                 }
             }
             pw.close();
@@ -123,7 +123,7 @@ public class Files {
     }
 
 //    小説の章を取得
-    public static ArrayList<String> NovelColumnsReader(String ncode, int index){
+    public static ArrayList<String> NovelColumnsReader(String ncode){
         ArrayList<String> columns = new ArrayList<>();
         if(!Files.CheckNovelDirectory(ncode)) return columns;
         if(!CheckNovelColumnsFileData(ncode)) return columns;

@@ -3,27 +3,19 @@ package data;
 //NovelColumnsListの項目定義
 
 public class NovelColumn {
-    private String subTitle;
+    private String title;
     private String postDay;
     private String lastUpdateDay;
     private int columnNumber;
 
 
-
-    public NovelColumn( String subTitle ,String postDay ,String lastUpdateDay, int columnNumber ){
-        this.subTitle = subTitle;
-        this.postDay = postDay;
-        this.lastUpdateDay = lastUpdateDay;
-        this.columnNumber = columnNumber;
+    public NovelColumn(){
+        title = "";
+        postDay = "";
+        lastUpdateDay = "";
+        columnNumber = 0;
     }
 
-    public int getColumnNumber() {
-        return columnNumber;
-    }
-
-    public void setColumnNumber(int columnNumber) {
-        this.columnNumber = columnNumber;
-    }
 
     public String getLastUpdateDay() {
         return lastUpdateDay;
@@ -41,11 +33,20 @@ public class NovelColumn {
         this.postDay = postDay;
     }
 
-    public String getSubTitle() {
-        return subTitle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setSubTitle(String subTitle) {
-        this.subTitle = subTitle;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+
+    public int getColumnNumber() {
+        return columnNumber;
+    }
+
+    public void setColumnNumber(int columnNumber) {
+        this.columnNumber = columnNumber;
     }
 }

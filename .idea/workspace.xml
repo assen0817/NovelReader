@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novels/n1619dr/.NovelColumns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/novels/n6774eh/.NovelColumns" beforeDir="false" afterPath="$PROJECT_DIR$/novels/n6774eh/.NovelColumns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/NovelColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/NovelColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/system/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/system/Novels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/system/Novels.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,11 +87,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/system/Files.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+            <state relative-caret-position="175">
+              <caret line="91" column="55" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/NewStageTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data/NovelColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+              <folding>
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1327#1328#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="67" column="82" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/windows/NovelManagementWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-130">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/test.java" />
         <option value="$PROJECT_DIR$/src/webWindow/WebStage.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/NewStageTest1.java" />
@@ -166,14 +237,15 @@
         <option value="$PROJECT_DIR$/src/windows/MessageWindow.java" />
         <option value="$PROJECT_DIR$/src/system/Novels.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java" />
         <option value="$PROJECT_DIR$/src/main/java/layout/NovelsListLayout.java" />
         <option value="$PROJECT_DIR$/novels/n8440fe/.NovelData" />
         <option value="$PROJECT_DIR$/src/main/java/windows/WebStage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data/NovelColumn.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/Novels.java" />
         <option value="$PROJECT_DIR$/src/main/java/windows/NovelManagementWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/system/Files.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/NovelColumn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java" />
       </list>
     </option>
   </component>
@@ -298,14 +370,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NovelReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NovelReader" type="b2602c69:ProjectViewProjectNode" />
@@ -545,12 +609,12 @@
       <workItem from="1566046216540" duration="10800000" />
       <workItem from="1566385486970" duration="72000" />
       <workItem from="1566385763843" duration="4724000" />
-      <workItem from="1566436765587" duration="2340000" />
+      <workItem from="1566436765587" duration="12788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136740000" />
+    <option name="totallyTimeSpent" value="147188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -652,18 +716,13 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NovelReader$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1566449080186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/NewStageTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -812,33 +871,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelsList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#841#861#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -853,25 +891,6 @@
             <element signature="method#checkWhetherNovel#0;class#Novels#0" />
             <element signature="method#NovelAPI#0;class#Novels#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/NovelColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novels/n6774eh/.NovelColumns">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1044" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novels/n1619dr/.NovelColumns">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -894,16 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/windows/NovelManagementWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelsListLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -914,10 +923,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/novels/n1619dr/.NovelColumns">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/NewStageTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/NovelColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novels/n6774eh/.NovelColumns">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/system/Files.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+        <state relative-caret-position="175">
+          <caret line="91" column="55" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ListCell/NovelColumnsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/layout/NovelColumnsLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="67" column="82" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/windows/NovelManagementWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
