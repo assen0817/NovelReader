@@ -33,27 +33,35 @@ public class NovelManagementWindow {
     //メニューバーの設定
     private void setMenu(BorderPane pane){
         MenuBar menu = new MenuBar();
-        Menu menu1 = new Menu("小説追加");
-        MenuItem menuItem11 = new MenuItem("サイト");
-        MenuItem menuItem12 = new MenuItem("URL");
-        menuItem11.addEventHandler( ActionEvent.ANY , e -> mouseClick());
+        Menu menu1 = new Menu("一般");
+        MenuItem menuItem11 = new MenuItem("更新");
+        MenuItem menuItem12 = new MenuItem("設定");
+        menuItem11.addEventHandler( ActionEvent.ANY , e -> mouseClick_update ());
         menu1.getItems().add(menuItem11);
         menu1.getItems().add(menuItem12);
 
-        Menu menu2 = new Menu("更新");
-        Menu menu3 = new Menu("設定");
+        Menu menu2 = new Menu("小説追加");
+        MenuItem menuItem21 = new MenuItem("サイト");
+        MenuItem menuItem22 = new MenuItem("URL");
+        menuItem21.addEventHandler( ActionEvent.ANY , e -> mouseClick_webPage());
+        menu2.getItems().add(menuItem21);
+        menu2.getItems().add(menuItem22);
+
         menu.getMenus().add(menu1);
         menu.getMenus().add(menu2);
-        menu.getMenus().add(menu3);
         pane.setTop(menu);
     }
 
 
-    private void mouseClick() {
+    private void mouseClick_webPage() {
         try {
             WebStage nst2 = new WebStage();
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void mouseClick_update() {
+
     }
 }
