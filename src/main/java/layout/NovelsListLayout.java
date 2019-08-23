@@ -53,8 +53,15 @@ public class NovelsListLayout {
 
         for(String ncode : list){
             HashMap<String, String> map = Files.NovelReader(ncode);
-            if(map.size() == 0) items.add(new Novel(ncode, "xxxx", ncode, 1, 1));
-            else items.add(new Novel(map.get("title"), map.get("writer"), ncode, 1, Integer.parseInt(map.get("general_all_no").trim())));
+            String title = ncode;
+            String author = "xxxx";
+            int nowReading = 1;
+            int allStory = 1;
+            if(map.containsKey("title")) title = map.get("title");
+            if(map.containsKey("writer")) author = map.get("writer");
+            if(map.containsKey("general_all_no")) allStory = Integer.parseInt(map.get("general_all_no").trim());
+
+            items.add(new Novel(title, author, ncode, nowReading, allStory));
         }
 
     }

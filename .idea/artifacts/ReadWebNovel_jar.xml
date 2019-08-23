@@ -3,6 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ReadWebNovel_jar</output-path>
     <root id="archive" name="ReadWebNovel.jar">
       <element id="module-output" name="NovelReader" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <element id="dir-copy" path="$PROJECT_DIR$/META-INF/org" />
+      </element>
     </root>
   </artifact>
 </component>

@@ -14,7 +14,6 @@ public class NovelManagementWindow {
     private HBox hbox;
 
     public NovelManagementWindow(BorderPane pane){
-        Novels.NovelColums("n6774eh");
         hbox = new HBox(5);
 //        小説の章
         NovelColumnsLayout novelColumn = new NovelColumnsLayout();
@@ -62,6 +61,6 @@ public class NovelManagementWindow {
     }
 
     private void mouseClick_update() {
-
+        Novels.NovelUpdate();
     }
 }

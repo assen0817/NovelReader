@@ -1,10 +1,10 @@
 package system;
 
+import data.NovelColumn;
+import javafx.application.Platform;
 import layout.NovelsListLayout;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import windows.MessageWindow;
 
 import java.io.BufferedReader;
@@ -19,6 +19,8 @@ public class Novels {
     private static String novelNcodeSite = "ncode.syosetu.com";
     private static String novelAPI = "https://api.syosetu.com/novelapi/api/";
     private static NovelsListLayout novelsListLayouts;
+    private static Boolean thread = false;
+    private static int threadTimer = 0;
 
 //更新する小説リストを登録する
     public static void setNovelList(NovelsListLayout novelsListLayouts){
@@ -44,12 +46,12 @@ public class Novels {
             return;
         }
 
-        BufferedReader reader = NovelALLInfo(ncode);
-        if(reader == null) {
+
+        if(!NovelALLInfo(ncode)) {
             mes.Error("小説を追加できませんでした。");
             return;
         }
-        Files.NovelWriter(ncode, reader);
+//        NovelColums(ncode);
         if(novelsListLayouts != null) novelsListLayouts.update();
         mes.finishNotice("小説が正常に追加されました。");
 
@@ -85,12 +87,12 @@ public class Novels {
         return false;
     }
 
-    public static BufferedReader NovelALLInfo(String ncode){
+    public static Boolean NovelALLInfo(String ncode){
         return NovelAPI(ncode, "");
     }
 
     // 追加したい小説（ncodeで判別）の情報をAPIで取得する
-    private static BufferedReader NovelAPI(String ncode, String parame) {
+    private static Boolean NovelAPI(String ncode, String parame) {
         try{
 //             URLを作成してGET通信を行う
             URL url = new URL( novelAPI + "?ncode=" + ncode + parame);
@@ -99,23 +101,61 @@ public class Novels {
             http.connect();
 //             サーバーからのレスポンスを標準出力へ出す
             BufferedReader reader = new BufferedReader(new InputStreamReader(http.getInputStream()));
-//            Files.NovelWriter(ncode, reader);
+            Files.NovelWriter(ncode, reader);
             reader.close();
 //            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
             Thread.sleep(1000);
+            return true;
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-        return null;
+        return false;
     }
 
     public static void NovelColums(String ncode){
         try {
             Document document = Jsoup.connect("https://" + novelNcodeSite + "/" + ncode).get();
             Files.NovelColumnsWriter(ncode, document);
-        } catch (IOException e) {
+//            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
+            Thread.sleep(1000);
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
 
+    public static void NovelUpdate(){
+        MessageWindow mes = new MessageWindow();
+        if(thread) {
+            mes.finishNotice("現在ダウンロード中：残り" + threadTimer + "秒");
+            return;
+        }
+        thread = true;
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                List<String> list = Files.getLocalNcode();
+                if(list == null) {
+                    thread = false;
+                    return;
+                }
+                threadTimer = list.size() * 2;
+
+                Platform.runLater(
+                        () ->mes.finishNotice("ダウンロードを開始しました。" + threadTimer + "秒かかります。"));
+                for(String ncode : list) {
+                    NovelColums(ncode);
+                    threadTimer--;
+                    NovelALLInfo(ncode);
+                    threadTimer--;
+                }
+                if(novelsListLayouts != null) {
+                    Platform.runLater(
+                            () -> novelsListLayouts.update());
+                }
+
+                thread = false;
+            }
+        }).start();
+
+    }
 }

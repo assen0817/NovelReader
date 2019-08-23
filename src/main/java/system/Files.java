@@ -13,7 +13,7 @@ import java.util.List;
 
 //ファイルの操作全般
 public class Files {
-    public static final String novels = "novels/";
+    public static final String novels = "./novels/";
     public static final String datafile = "/.NovelData";
     public static final String novelColumnsFile = "/.NovelColumns";
 
@@ -21,7 +21,7 @@ public class Files {
     public static void NovelWriter(String ncode, BufferedReader data) {
         try {
             String dir = novels + ncode;
-            if(!Files.CheckNovelDirectory(ncode)) (new File(dir)).mkdir();
+            NovelDirectory(ncode);
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(dir + datafile)));
             String line = "";
             while ((line = data.readLine()) != null)
@@ -35,7 +35,7 @@ public class Files {
     public static HashMap<String, String> NovelReader(String ncode) {
         HashMap<String, String> map = new HashMap<String, String>();//[1]
         String file =  novels + ncode + datafile;
-        if(!Files.CheckNovelDirectory(ncode)) return map;
+        NovelDirectory(ncode);
         if(!Files.CheckNovelFileData(ncode)) return map;
 
         try {
@@ -70,9 +70,12 @@ public class Files {
         return map;
     }
 //    小説のディレクトリの有無
-    public static Boolean CheckNovelDirectory(String ncode){
+    public static void NovelDirectory(String ncode){
         String file = novels + ncode;
-        return (new File(file)).exists();
+        File novel = new File(novels);
+        File folder = new File(file);
+        if(!novel.exists()) novel.mkdir();
+        if(!folder.exists()) folder.mkdir();
     }
 //    小説の情報ファイルの有無
     public static Boolean CheckNovelFileData(String ncode){
@@ -92,7 +95,7 @@ public class Files {
         Elements elements = data.select(".chapter_title, .subtitle, .long_update, span[title]");
         try {
             String dir = novels + ncode;
-            if(!Files.CheckNovelDirectory(ncode)) (new File(dir)).mkdir();
+            NovelDirectory(ncode);
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(dir + novelColumnsFile)));
             StringBuilder line = new StringBuilder();
             for (Element element : elements) {
@@ -125,7 +128,7 @@ public class Files {
 //    小説の章を取得
     public static ArrayList<String> NovelColumnsReader(String ncode){
         ArrayList<String> columns = new ArrayList<>();
-        if(!Files.CheckNovelDirectory(ncode)) return columns;
+        NovelDirectory(ncode);
         if(!CheckNovelColumnsFileData(ncode)) return columns;
         try {
             File file = new File(novels + ncode + novelColumnsFile);
