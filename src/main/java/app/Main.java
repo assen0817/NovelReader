@@ -19,7 +19,7 @@ public class Main extends Application {
 
         NovelManagementWindow novelManagementWindow = new NovelManagementWindow(pane);
 
-        stage.setTitle("Hello World");
+        stage.setTitle("NovelReader");
         stage.setScene(scene);
         stage.show();
     }

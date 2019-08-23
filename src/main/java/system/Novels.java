@@ -51,7 +51,7 @@ public class Novels {
             mes.Error("小説を追加できませんでした。");
             return;
         }
-//        NovelColums(ncode);
+        NovelColums(ncode);
         if(novelsListLayouts != null) novelsListLayouts.update();
         mes.finishNotice("小説が正常に追加されました。");
 
@@ -100,7 +100,7 @@ public class Novels {
             http.setRequestMethod("GET");
             http.connect();
 //             サーバーからのレスポンスを標準出力へ出す
-            BufferedReader reader = new BufferedReader(new InputStreamReader(http.getInputStream()));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(http.getInputStream(),"UTF-8"));
             Files.NovelWriter(ncode, reader);
             reader.close();
 //            ボタン連打によるDOS攻撃防止（API提供サーバー負荷対策）
