@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
 import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import system.Novels;
@@ -53,6 +54,7 @@ public class WebStage extends Stage {
                 urlBox.setText(engine.getLocation());
             }
         });
+
         // ページの更新ボタン
         Button updateButton = new Button("開く");
         updateButton.setFont(new Font("sanserif", 12));
@@ -71,9 +73,29 @@ public class WebStage extends Stage {
             }
         });
 
+//        ページの小説をダウンロードボタン
+        Button backButton = new Button("<");
+        downloadButton.setFont(new Font("sanserif", 12));
+        downloadButton.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event) {
+                onBack();
+            }
+        });
+
+//
+        Button nextButton = new Button(">");
+        downloadButton.setFont(new Font("sanserif", 12));
+        downloadButton.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event) {
+                onNext();
+            }
+        });
+
         AnchorPane anPane = new AnchorPane();
-        anPane.getChildren().addAll( urlBox , updateButton, downloadButton );
-        AnchorPane.setLeftAnchor(urlBox, 10.);
+        anPane.getChildren().addAll( backButton, nextButton ,urlBox , updateButton, downloadButton );
+        AnchorPane.setLeftAnchor(backButton, 0.);
+        AnchorPane.setLeftAnchor(nextButton, 25.);
+        AnchorPane.setLeftAnchor(urlBox, 50.);
         AnchorPane.setRightAnchor(urlBox, 90.);
         AnchorPane.setRightAnchor(updateButton, 60.);
         AnchorPane.setRightAnchor(downloadButton, 10.);
@@ -86,6 +108,20 @@ public class WebStage extends Stage {
         if (url != null && !url.trim().isEmpty()) {
             engine.load(url);
         }
+    }
+
+    //戻るボタン
+    public void onBack() {
+        WebEngine engine = webView.getEngine();
+        WebHistory history = engine.getHistory();
+        if ( history.getCurrentIndex() > 0 ) history.go(-1);
+    }
+
+    //進むボタン
+    public void onNext() {
+        WebEngine engine = webView.getEngine();
+        WebHistory history = engine.getHistory();
+        if ( history.getCurrentIndex() < history.getEntries().size() - 1 ) history.go(1);
     }
 
 }
